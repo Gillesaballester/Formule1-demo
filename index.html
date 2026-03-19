@@ -64,8 +64,12 @@
       letter-spacing: 0.15em;
       text-transform: uppercase;
       color: var(--white);
+      font-style: italic;
     }
-    .nav-logo-text span { color: var(--red); }
+    .nav-logo-text span {
+      color: var(--red);
+      text-shadow: 0 0 15px rgba(212,43,43,0.7), 0 0 30px rgba(212,43,43,0.3);
+    }
     nav ul {
       display: flex; gap: 2.5rem;
       list-style: none;
@@ -584,7 +588,7 @@
 <nav>
   <a href="#" class="nav-logo">
     <div class="nav-logo-icon">F1</div>
-    <div class="nav-logo-text">Formule <span>Centre Auto</span></div>
+    <div class="nav-logo-text">Formule <span>1 Centre Auto</span></div>
   </a>
   <ul>
     <li><a href="#services">Services</a></li>
@@ -741,8 +745,16 @@
       <div class="contact-line">
         <div class="contact-icon">🕐</div>
         <div class="contact-detail">
-          <strong>Horaires</strong>
-          <span>Lun–Ven 8h30–12h / 13h30–18h<br>Sam 8h30–12h / 13h30–17h</span>
+          <strong>Horaires d'ouverture</strong>
+          <span style="display:grid;grid-template-columns:1fr 1fr;gap:0.3rem 2rem;margin-top:0.5rem;">
+            <span style="color:var(--gray);font-size:0.75rem;">Lundi</span><span style="font-size:0.75rem;">08h30 – 12h00 / 13h30 – 18h00</span>
+            <span style="color:var(--gray);font-size:0.75rem;">Mardi</span><span style="font-size:0.75rem;">08h30 – 12h00 / 13h30 – 18h00</span>
+            <span style="color:var(--gray);font-size:0.75rem;">Mercredi</span><span style="font-size:0.75rem;">08h30 – 12h00 / 13h30 – 18h00</span>
+            <span style="color:var(--gray);font-size:0.75rem;">Jeudi</span><span style="font-size:0.75rem;">08h30 – 12h00 / 13h30 – 18h00</span>
+            <span style="color:var(--gray);font-size:0.75rem;">Vendredi</span><span style="font-size:0.75rem;">08h30 – 12h00 / 13h30 – 18h00</span>
+            <span style="color:var(--gray);font-size:0.75rem;">Samedi</span><span style="font-size:0.75rem;">08h30 – 12h00 / 13h30 – 17h00</span>
+            <span style="color:var(--gray);font-size:0.75rem;">Dimanche</span><span style="color:var(--red);font-size:0.75rem;font-weight:400;">Fermé</span>
+          </span>
         </div>
       </div>
     </div>
